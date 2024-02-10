@@ -30,6 +30,5 @@ This portfolio website serves as a showcase of my work and expertise as a UI dev
 Sanjeev Singh Negi
 
 - Email: contactsanjeev.singh@yahoo.com
-- Mobile number: [9812154536](tel:+919812154536)
 - LinkedIn: [Sanjeev's LinkedIn Profile](https://www.linkedin.com/in/sanjeev-singh-negi)
-- Portfolio: [Sanjeev's Portfolio Website](https://your-portfolio-url.com/)
+- Portfolio: [Sanjeev's Portfolio Website](https://sanjeev232.github.io/my-portfolio/)
