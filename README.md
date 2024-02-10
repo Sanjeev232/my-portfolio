@@ -31,5 +31,5 @@ Sanjeev Singh Negi
 
 - Email: contactsanjeev.singh@yahoo.com
 - Mobile number: [9812154536](tel:+919812154536)
-- LinkedIn: [Sanjeev's LinkedIn Profile](https://www.linkedin.com/in/sanjeev-singh-negi){:target="_blank"}
-- Portfolio: [Sanjeev's Portfolio Website](https://your-portfolio-url.com/){:target="_blank"}
+- LinkedIn: [Sanjeev's LinkedIn Profile](https://www.linkedin.com/in/sanjeev-singh-negi)
+- Portfolio: [Sanjeev's Portfolio Website](https://your-portfolio-url.com/)
