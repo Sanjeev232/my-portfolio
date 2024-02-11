@@ -1,12 +1,18 @@
-import PortfolioRouter from "./PortfolioRouter";
 import NavBar from "./View/NavBar";
+import Home from "./View/Home";
+import About from "./View/About";
+import Experience from "./View/Experience";
+import Footer from "./View/Footer";
 
 function App() {
   return (
-    <>
+    <div className="main-container">
       <NavBar />
-      <PortfolioRouter />
-    </>
+      <Home />
+      <Experience />
+      <About />
+      <Footer />
+    </div>
   );
 }
 

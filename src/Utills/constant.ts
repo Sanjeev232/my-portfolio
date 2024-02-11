@@ -14,7 +14,24 @@ export const SKILLS = Object.freeze({
 export const CONTACT_DETAILS = Object.freeze({
   email: "contactsanjeev.singh@yahoo.com",
   mobileNumber: "9812164536",
-  linkedin: "www.linkedin.com/in/sanjeev-singh-negi",
+  linkedin: "https://www.linkedin.com/in/sanjeev-singh-negi",
   gitHubPersonal: "https://github.com/Sanjeev232",
   gitHubOffice: "https://github.com/Sanjeevsinghnegi",
+  myPortFolioGitHub: "https://github.com/Sanjeev232/my-portfolio",
+  resume: "https://www.linkedin.com/in/sanjeev-singh-negi"
 });
+
+export const NAV_LINKS_MAP = [
+  {
+    name: "About",
+    link: "#about",
+  },
+  {
+    name: "Experience",
+    link: "#experience",
+  },
+  {
+    name: "Contact",
+    link: "#contact",
+  },
+];
