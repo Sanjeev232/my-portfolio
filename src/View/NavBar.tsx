@@ -1,5 +1,5 @@
 import { NavBarLogo } from "../assets/svg";
-import { NAV_LINKS_MAP, CONTACT_DETAILS } from "../Utills/constant";
+import { NAV_LINKS_MAP, CONTACT_DETAILS } from "../Utils/constant";
 
 const NavBar = () => {
   return (

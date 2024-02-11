@@ -83,6 +83,9 @@ svg {
     display: block;
     max-width: 100%;
 }
+svg {
+    vertical-align: middle;
+}
 
 input,
 button,
@@ -122,7 +125,7 @@ a:visited {
     position: relative;
     transition: var(--transition);
     text-decoration: none;
-    color: #e2e8f0;
+    color: var(--white);
 }
 
 a:hover,
@@ -132,6 +135,9 @@ a:active {
 
 #root {
     isolation: isolate;
+}
+svg.feather {
+    fill: none;
 }
 
 .main-container {
@@ -151,8 +157,6 @@ a:active {
 
 .main-container> :not(:first-child):not(:last-child) {
     flex-grow: 1;
-
-    border: solid red;
 }
 
 .nav__bar {
@@ -228,12 +232,21 @@ a:active {
     align-items: center;
     justify-content: space-around;
     font-size: var(--fz-xs);
+}
 
-    > ul {
-        display: flex;
-        align-items: center;
-        gap: .7rem;
+.footer-container>.footer-container__ul {
+    display: flex;
+    align-items: center;
+    gap: .7rem;
+
+    svg {
+        width: 1.2rem;
+        height: 1.2rem;
     }
+}
+
+.footer-icons:hover {
+    transform: translateY(-3px);
 }
 
 .footer-Link {
@@ -241,3 +254,4 @@ a:active {
         text-decoration: underline;
     }
 }
+
