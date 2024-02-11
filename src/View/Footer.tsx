@@ -15,7 +15,7 @@ const Footer = () => {
         href={CONTACT_DETAILS.myPortFolioGitHub}
         target="_blank"
       >
-        Design & Built by Sanjeev Singh updated
+        Design & Built by Sanjeev Singh
       </a>
       <p>© Sanjeev Singh {getCurrentDate()}</p>
     </div>
