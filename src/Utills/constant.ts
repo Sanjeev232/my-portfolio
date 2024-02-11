@@ -10,3 +10,11 @@ export const SKILLS = Object.freeze({
   analyticsTools: ["mixpanel", "segment", "google analytics 4", "GTM"],
   backend: ["node", "express"],
 });
+
+export const CONTACT_DETAILS = Object.freeze({
+  email: "contactsanjeev.singh@yahoo.com",
+  mobileNumber: "9812164536",
+  linkedin: "www.linkedin.com/in/sanjeev-singh-negi",
+  gitHubPersonal: "https://github.com/Sanjeev232",
+  gitHubOffice: "https://github.com/Sanjeevsinghnegi",
+});
