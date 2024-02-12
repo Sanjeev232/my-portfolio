@@ -7,19 +7,88 @@ interface SvgComponentProps extends SVGProps<SVGSVGElement> {
   fill?: string;
 }
 
-export const NavBarLogo: React.FC<SvgComponentProps> = (props) => (
+export const LoadingPentagon: React.FC<SvgComponentProps> = () => (
   <svg
+    className="center-pentagon"
+    viewBox="0 0 32 32"
+    version="1.1"
     xmlns="http://www.w3.org/2000/svg"
-    width={800}
-    height={800}
-    aria-hidden="true"
-    viewBox={"0 0 128 128"}
-    {...props}
   >
-    <path
-      fill={"#64ffda"}
-      d="M94.9 71.35c-8.08-7.63-21.82-13.99-30.91-18.2-1.54-.71-2.93-1.35-4.11-1.92-3.43-1.65-8.12-6.22-6.1-11.47 1.36-3.55 4.81-5.34 10.27-5.34 1.75 0 3.67.2 5.72.58 7.12 1.33 12.52 3.99 15.58 5.5.38.19.82.21 1.22.07.39-.15.72-.45.89-.84l7.01-15.81c.31-.69.07-1.51-.57-1.93-4.94-3.28-17.27-8.15-30.97-8.15-1.98 0-3.95.1-5.87.3-10.92 1.12-21.86 4.03-27.92 17.64-3.78 8.47-3.77 18.01.01 24.89 4.04 7.51 10.66 10.87 19.04 15.11l1.08.55c6.05 3.02 13.3 6.38 18.07 8.59 7.05 3.4 9.66 9.44 8.04 13.08-2.61 5.87-8.38 7.16-18.36 4.33-8.81-2.39-16.94-9.14-19.21-11.15-.34-.3-.79-.44-1.25-.38-.45.06-.85.32-1.1.69L24.6 104.14c-.41.63-.32 1.46.22 1.98 5.63 5.43 10.22 8.59 18.17 12.5 5.35 2.63 13.18 4.21 20.95 4.21 8.12 0 27.95-1.88 36.65-19.26 5.55-11.12 3.48-22.84-5.69-32.22z"
-    />
+    <text
+      x="50%"
+      y="60%"
+      fontSize="20"
+      fontFamily="Calibre"
+      fill="#64ffda"
+      textAnchor="middle"
+      alignmentBaseline="middle"
+    >
+      S
+    </text>
+  </svg>
+);
+export const LoadingPentagonLines: React.FC<SvgComponentProps> = () => (
+  <svg
+    className="paths"
+    viewBox="0 0 32 32"
+    version="1.1"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <filter id="blur">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="3" />
+    </filter>
+
+    <filter id="no-blur">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="0" />
+    </filter>
+
+    <polygon
+      className="center"
+      points="16 2.9000001 30 13.0715955 24.6524758 29.5295826 7.34752416 29.5295826 2 13.0715955"
+    ></polygon>
+    <polygon
+      className="outside"
+      points="31.7633558 12.4986465 25.7422896 31.0295826 6.25771037 31.0295826 0.236644243 12.4986465 16 1.04589813"
+    ></polygon>
+    <polygon
+      className="inside"
+      points="16 4.75410206 3.76335576 13.6445445 8.43733795 28.0295826 23.5626621 28.0295826 28.2366442 13.6445445"
+    ></polygon>
+  </svg>
+);
+
+export const NavBarLogo: React.FC<SvgComponentProps> = () => (
+  <svg
+    id="logo"
+    xmlns="http://www.w3.org/2000/svg"
+    role="img"
+    viewBox="0 0 84 96"
+  >
+    <title>Logo</title>
+    <g transform="translate(-8.000000, -2.000000)">
+      <g transform="translate(11.000000, 5.000000)">
+        <polygon
+          id="Shape"
+          stroke="#64ffda"
+          strokeWidth="5"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          points="39 0 0 22 0 67 39 90 78 68 78 23"
+        ></polygon>
+        <text
+          x="47%"
+          y="50%"
+          fontSize="40"
+          fontStyle="Bold"
+          fontFamily="Calibre"
+          fill="#64ffda"
+          textAnchor="middle"
+          alignmentBaseline="middle"
+        >
+          S
+        </text>
+      </g>
+    </g>
   </svg>
 );
 
@@ -34,11 +103,11 @@ export const GitHubLogo: React.FC<SvgComponentProps> = (props) => (
     className="feather feather-github"
     viewBox="0 0 24 24"
     {...props}
-    >
+  >
     <title>{"GitHub"}</title>
     <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
   </svg>
-)
+);
 
 export const LinkedInLogo: React.FC<SvgComponentProps> = (props) => (
   <svg
@@ -56,7 +125,7 @@ export const LinkedInLogo: React.FC<SvgComponentProps> = (props) => (
     <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z" />
     <circle cx={4} cy={4} r={2} />
   </svg>
-)
+);
 
 export const MobileCall: React.FC<SvgComponentProps> = (props) => (
   <svg
@@ -85,7 +154,7 @@ export const MobileCall: React.FC<SvgComponentProps> = (props) => (
       clipRule="evenodd"
     />
   </svg>
-)
+);
 
 export const EmailIcon: React.FC<SvgComponentProps> = (props) => (
   <svg
@@ -100,12 +169,12 @@ export const EmailIcon: React.FC<SvgComponentProps> = (props) => (
   >
     <title>{"Email me"}</title>
     <path
-      fill= "#e6f1ff"
+      fill="#e6f1ff"
       fillRule="evenodd"
       d="M510.746 110.361c-2.128-10.754-6.926-20.918-13.926-29.463-1.422-1.794-2.909-3.39-4.535-5.009-12.454-12.52-29.778-19.701-47.531-19.701H67.244c-17.951 0-34.834 7-47.539 19.708-1.608 1.604-3.099 3.216-4.575 5.067-6.97 8.509-11.747 18.659-13.824 29.428A64.963 64.963 0 0 0 0 123.435v265.137c0 9.224 1.874 18.206 5.589 26.745 3.215 7.583 8.093 14.772 14.112 20.788a75.763 75.763 0 0 0 4.63 4.258c12.034 9.966 27.272 15.45 42.913 15.45h377.51c15.742 0 30.965-5.505 42.967-15.56a58.23 58.23 0 0 0 4.578-4.148c5.818-5.812 10.442-12.49 13.766-19.854l.438-1.05c3.646-8.377 5.497-17.33 5.497-26.628V123.435c0-4.375-.422-8.786-1.254-13.074zM34.823 99.104c.951-1.392 2.165-2.821 3.714-4.382 7.689-7.685 17.886-11.914 28.706-11.914h377.51c10.915 0 21.115 4.236 28.719 11.929a40.528 40.528 0 0 1 3.661 4.272l2.887 3.88-201.5 175.616c-6.212 5.446-14.21 8.443-22.523 8.443-8.231 0-16.222-2.99-22.508-8.436L32.19 102.939l2.633-3.835zm-8.068 291.809c-.109-.722-.134-1.524-.134-2.341V128.925l156.37 136.411L28.199 400.297l-1.444-9.384zm438.144 32.927c-6.052 3.492-13.022 5.344-20.145 5.344H67.244c-7.127 0-14.094-1.852-20.142-5.344l-6.328-3.668L200.71 280.793l17.528 15.246c10.514 9.128 23.922 14.16 37.761 14.16 13.89 0 27.32-5.032 37.827-14.16l17.521-15.253L471.228 420.18l-6.329 3.66zm20.473-35.268c0 .803-.015 1.597-.116 2.304l-1.386 9.472-154.858-134.939 156.36-136.418v259.581z"
     />
   </svg>
-)
+);
 
 export const ChatIcon: React.FC<SvgComponentProps> = (props) => (
   <svg
@@ -127,4 +196,26 @@ export const ChatIcon: React.FC<SvgComponentProps> = (props) => (
       d="M8 10.5h8M8 14h5.5M17 3.338A9.954 9.954 0 0 0 12 2C6.477 2 2 6.477 2 12c0 1.6.376 3.112 1.043 4.453.178.356.237.763.134 1.148l-.595 2.226a1.3 1.3 0 0 0 1.591 1.591l2.226-.595a1.634 1.634 0 0 1 1.149.133A9.958 9.958 0 0 0 12 22c5.523 0 10-4.477 10-10 0-1.821-.487-3.53-1.338-5"
     />
   </svg>
-)
+);
+
+export const WhatsAppIcon: React.FC<SvgComponentProps> = (props) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={800}
+    height={800}
+    stroke="currentColor"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    fill="none"
+    viewBox="0 0 24 24"
+    className="feather feather-chatIcon"
+    {...props}
+  >
+    <path
+      stroke="#e6f1ff"
+      strokeLinecap="round"
+      strokeWidth={1.5}
+      d="M8 10.5h8M8 14h5.5M17 3.338A9.954 9.954 0 0 0 12 2C6.477 2 2 6.477 2 12c0 1.6.376 3.112 1.043 4.453.178.356.237.763.134 1.148l-.595 2.226a1.3 1.3 0 0 0 1.591 1.591l2.226-.595a1.634 1.634 0 0 1 1.149.133A9.958 9.958 0 0 0 12 22c5.523 0 10-4.477 10-10 0-1.821-.487-3.53-1.338-5"
+    />
+  </svg>
+);
