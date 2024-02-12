@@ -13,6 +13,8 @@ Welcome to my Portfolio repository! This repository contains the source code for
 
 This portfolio website serves as a showcase of my work and expertise as a UI developer, providing an overview of my skills, projects, and professional experience. Feel free to explore the site to learn more about me and my work.
 
+![Screenshot 2024-02-13 at 12 59 30 AM](https://github.com/Sanjeev232/my-portfolio/assets/54616074/f791f87f-1919-451b-aa43-232215510cd2)
+
 ## Technologies Used
 
 - React.js
