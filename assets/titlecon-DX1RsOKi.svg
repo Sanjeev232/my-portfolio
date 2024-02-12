@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg
+    id="logo"
+    xmlns="http://www.w3.org/2000/svg"
+    role="img"
+    viewBox="0 0 84 96"
+  >
+    <title>Logo</title>
+    <g transform="translate(-8.000000, -2.000000)">
+      <g transform="translate(11.000000, 5.000000)">
+        <text
+          x="20%"
+          y="70%"
+          font-size="70"
+          font-style="Bold"
+          font-family="Calibre"
+          fill="#64ffda"
+          textAnchor="middle"
+          alignmentBaseline="middle"
+        >
+          S
+        </text>
+      </g>
+    </g>
+  </svg>
+
