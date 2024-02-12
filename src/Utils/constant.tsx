@@ -43,7 +43,8 @@ export const CONTACT_DETAILS = Object.freeze({
   gitHubPersonal: "https://github.com/Sanjeev232",
   gitHubOffice: "https://github.com/Sanjeevsinghnegi",
   myPortFolioGitHub: "https://github.com/Sanjeev232/my-portfolio",
-  resume: "https://www.linkedin.com/in/sanjeev-singh-negi",
+  resume:
+    "https://drive.google.com/file/d/1HumqnECvc4MPz2xMBGn7YmoU7eCQuZO_/view?usp=sharing",
 });
 
 export const FOOTER_LOGO_MAP = [
