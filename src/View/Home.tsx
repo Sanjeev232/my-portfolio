@@ -31,7 +31,7 @@ const Home = () => {
         .
       </p>
       <a
-        className="email-link"
+        className="email-link email-link-header"
         href={CONTACT_DETAILS.gitHubOffice}
         target="_blank"
         rel="noreferrer"

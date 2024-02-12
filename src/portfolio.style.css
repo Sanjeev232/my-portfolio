@@ -111,7 +111,7 @@ svg.feather {
 
 .big-heading {
     margin: 0px;
-    font-size: clamp(40px, 8vw, 80px);
+    font-size: clamp(37px, 8vw, 80px);
 }
 
 .typewriter.green-heading {
@@ -265,6 +265,45 @@ p>.p-anchor:focus-visible {
     }
 }
 
+@media (max-width: 866px) {
+    .sub-container {
+        padding: 2.5rem;
+    }
+
+    .email-link-header {
+        margin-top: 3rem
+    }
+}
+
+@media (max-width: 460px) {
+
+    .email-link,
+    .tel-link {
+        text-align: center;
+        padding: 1.25rem 1.5rem
+    }
+}
+
+@media (max-width: 500px) {
+
+    .email-link,
+    .tel-link {
+        padding: 1.25rem 1rem
+    }
+
+    .footer-container {
+        background-color: var(--navy);
+        box-shadow: 0 10px 30px -15px var(--navy-shadow);
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .footer-container__ul {
+        margin-block-start: 0;
+        margin-block-end: 0;
+        padding-inline-start: 0;
+    }
+}
 
 @keyframes typing {
     from {
