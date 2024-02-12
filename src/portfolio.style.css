@@ -138,6 +138,10 @@ a:active {
     isolation: isolate;
 }
 
+section {
+    padding: 100px 0px;
+}
+
 svg.feather {
     fill: none;
 }
@@ -238,7 +242,7 @@ svg.feather {
 }
 
 .sub-container {
-    padding: 0px 15rem;
+    padding: 10rem 15rem;
 }
 
 .home-container {

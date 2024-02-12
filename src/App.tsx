@@ -24,7 +24,7 @@ function App() {
     <div className="main-container">
       <NavBar />
         <Home />
-        <About />
+        {/* <About /> */}
         {/* <Experience /> */}
         <Contact />
         <Footer />

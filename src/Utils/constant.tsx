@@ -78,10 +78,10 @@ export const FOOTER_LOGO_MAP = [
 ];
 
 export const NAV_LINKS_MAP = [
-  {
-    name: "About",
-    link: "#about",
-  },
+  // {
+  //   name: "About",
+  //   link: "#about",
+  // },
   // {
   //   name: "Experience",
   //   link: "#experience",
