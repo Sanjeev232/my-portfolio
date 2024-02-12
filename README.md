@@ -18,12 +18,12 @@ This portfolio website serves as a showcase of my work and expertise as a UI dev
 - React.js
 - TypeScript
 - Vite
-- TailWind
+- Css
 
 ## Features
 
 - Responsive design for various devices.
-- Interactive sections for About Me, Experience , Work, Projects, and Contact.
+- Interactive sections for About Me, Experience and Contact.
 
 ## Contact
 
