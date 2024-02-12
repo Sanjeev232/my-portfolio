@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState } from "react";
 
 import { NavBarLogo } from "../assets/svg";
 import { NAV_LINKS_MAP, CONTACT_DETAILS } from "../Utils/constant";
@@ -11,10 +11,10 @@ const NavBar = () => {
       const scrolledDown = window.scrollY > 0;
       setIsScrolled(scrolledDown);
     };
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
 
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
@@ -33,7 +33,12 @@ const NavBar = () => {
             </li>
           ))}
         </ul>
-        <a className="nav__resume" href={CONTACT_DETAILS.resume} target="_blank" rel="noopener noreferrer">
+        <a
+          className="nav__resume"
+          href={CONTACT_DETAILS.resume}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           Resume
         </a>
       </div>
