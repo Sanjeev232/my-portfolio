@@ -28,6 +28,4 @@ Please fill these details, it will help the reviewers.
 
 ### Screenshot
 
--
-
 NOTE: Make sure you're comparing your branch with the correct base branch
