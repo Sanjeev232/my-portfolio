@@ -38,7 +38,7 @@ export const SKILLS = Object.freeze({
 
 export const CONTACT_DETAILS = Object.freeze({
   email: "contactsanjeev.singh@yahoo.com",
-  mobileNumber: "+919812164536",
+  mobileNumber: "+919812154536",
   linkedin: "https://www.linkedin.com/in/sanjeev-singh-negi",
   gitHubPersonal: "https://github.com/Sanjeev232",
   gitHubOffice: "https://github.com/Sanjeevsinghnegi",
