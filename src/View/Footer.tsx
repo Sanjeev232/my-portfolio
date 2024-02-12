@@ -1,4 +1,4 @@
-import { FOOTER_LOGO_MAP, CONTACT_DETAILS } from "../Utils/constant";
+import { FOOTER_LOGO_MAP, CONTACT_DETAILS, AUTHOR_NAME } from "../Utils/constant";
 
 const Footer = () => {
   const getCurrentDate = () => new Date().getFullYear();
@@ -15,9 +15,9 @@ const Footer = () => {
         href={CONTACT_DETAILS.myPortFolioGitHub}
         target="_blank"
       >
-        Design & Built by Sanjeev Singh
+        Design & Built by {AUTHOR_NAME}
       </a>
-      <p>© Sanjeev Singh {getCurrentDate()}</p>
+      <p>© {AUTHOR_NAME} {getCurrentDate()}</p>
     </div>
   );
 };

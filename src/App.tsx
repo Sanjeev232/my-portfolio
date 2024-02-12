@@ -22,10 +22,10 @@ function App() {
 
   return (
     <div className="main-container">
-        <NavBar />
+      <NavBar />
         <Home />
         <About />
-        <Experience />
+        {/* <Experience /> */}
         <Contact />
         <Footer />
     </div>
