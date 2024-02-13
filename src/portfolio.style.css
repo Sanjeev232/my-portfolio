@@ -228,6 +228,7 @@ p>.p-anchor:focus-visible {
     bottom: 2rem;
     right: 3rem;
     cursor: pointer;
+    z-index: 999;
 
     >svg:hover {
         transform: scale(1.5);
