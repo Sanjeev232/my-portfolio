@@ -218,6 +218,22 @@ p>.p-anchor:focus-visible {
     }
 }
 
+.move-to-top {
+    transition: all .2s ease-in-out;
+    background: 0 0;
+    border: none;
+    outline: 0;
+    width: 40px;
+    position: fixed;
+    bottom: 2rem;
+    right: 3rem;
+    cursor: pointer;
+
+    >svg:hover {
+        transform: scale(1.5);
+    }
+}
+
 @media (max-width: 866px) {
     .sub-container {
         padding: 2.5rem;
