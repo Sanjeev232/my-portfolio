@@ -8,7 +8,7 @@ const Contact = () => {
     <section id="contact" className="sub-container contact-container">
       <h2 className="numbered-heading overline">What’s Next?</h2>
       <h2 className="title">Get In Touch</h2>
-      <p>
+      <p className="paragraph">
         {jobLookingRef.current ? GET_IN_TOUCH.looking : GET_IN_TOUCH.notLooking}
       </p>
       <div className="contact-cta-container">

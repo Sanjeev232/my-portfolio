@@ -3,11 +3,16 @@ import {
   AUTHOR_NAME,
   CONTACT_DETAILS,
 } from "../Utils/constant";
+import { getLastWorkedCompany } from "../Utils/helpers";
+
+interface Company {
+  link: string;
+  name: string;
+}
 
 const Home = () => {
-  const keys = Object.keys(COMPANY_WORKED);
-  const lastKey = keys[keys.length - 1];
-  const currentWorkingCompany = (COMPANY_WORKED as any)[lastKey];
+  const currentWorkingCompany = getLastWorkedCompany(COMPANY_WORKED) as Company;
+  const { name, link } = currentWorkingCompany;
 
   return (
     <section id="home" className="sub-container home-container">
@@ -21,12 +26,12 @@ const Home = () => {
         development at{" "}
         <a
           className="p-anchor"
-          href={currentWorkingCompany.link}
+          href={link}
           rel="noreferrer"
           target="_blank"
           tabIndex={-1}
         >
-          {currentWorkingCompany.name}
+          {name}
         </a>
         .
       </p>

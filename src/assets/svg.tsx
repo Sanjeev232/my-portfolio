@@ -74,7 +74,7 @@ export const NavBarLogo: React.FC<SvgComponentProps> = () => (
           strokeLinecap="round"
           strokeLinejoin="round"
           points="39 0 0 22 0 67 39 90 78 68 78 23"
-        ></polygon>
+        />
         <text
           x="47%"
           y="50%"

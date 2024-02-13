@@ -1,16 +1,25 @@
 import { useEffect, useState } from "react";
+import "./navbar.style.css";
+import { NavBarLogo } from "../../assets/svg";
+import NavBarDesktop from "./NavBarDesktop";
+import NavBarMobile from "./NavBarMobile";
 
-import { NavBarLogo } from "../assets/svg";
-import { NAV_LINKS_MAP, CONTACT_DETAILS } from "../Utils/constant";
+const SHOW_HAMBURGER_AT = 525;
 
 const NavBar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isSmallScreen, setIsSmallScreen] = useState(false);
 
   useEffect(() => {
+    const screenWidth = window.innerWidth;
+
+    if (screenWidth < SHOW_HAMBURGER_AT) setIsSmallScreen(true);
+
     const handleScroll = () => {
       const scrolledDown = window.scrollY > 0;
       setIsScrolled(scrolledDown);
     };
+
     window.addEventListener("scroll", handleScroll);
 
     return () => {
@@ -25,23 +34,7 @@ const NavBar = () => {
           <NavBarLogo />
         </a>
       </div>
-      <div className="nav__list">
-        <ul className="nav__list-ul">
-          {NAV_LINKS_MAP.map((data, index) => (
-            <li className="nav__list-li" key={index} tabIndex={index}>
-              <a href={data.link}>{data.name}</a>
-            </li>
-          ))}
-        </ul>
-        <a
-          className="nav__resume"
-          href={CONTACT_DETAILS.resume}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Resume
-        </a>
-      </div>
+      {isSmallScreen ? <NavBarMobile /> : <NavBarDesktop />}
     </nav>
   );
 };

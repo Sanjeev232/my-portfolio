@@ -11,11 +11,11 @@
     --white: #e6f1ff;
     --green: #64ffda;
     --green-tint: rgba(100, 255, 218, 0.1);
-    --pink: #f57dff;
     --blue: #57cbff;
     --font-sans: "Calibre", "Inter", "San Francisco", "SF Pro Text", -apple-system,
         system-ui, sans-serif;
     --font-mono: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+    --gutter-xm: 17px;
     --fz-xxs: 12px;
     --fz-xs: 13px;
     --fz-sm: 14px;
@@ -107,6 +107,7 @@ ul {
 
 ul {
     list-style-type: none;
+    font-family: var(--font-mono);
 }
 
 p {
@@ -131,6 +132,19 @@ a:visited {
 a:hover,
 a:active {
     color: var(--green);
+}
+
+img {
+    width: 100%;
+    max-width: 100%;
+    vertical-align: middle;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+img[alt=""],
+img:not([alt]) {
+    filter: blur(5px);
 }
 
 #root {

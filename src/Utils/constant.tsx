@@ -1,20 +1,36 @@
 import { GitHubLogo, LinkedInLogo, MobileCall } from "../assets/svg";
 
 export const AUTHOR_NAME = "Sanjeev Singh";
+export const BACKEND_SKILLS = false;
+export const MY_IMAGE = "/my-portfolio/src/assets/sanjeev_01.webp";
+export const FIRST_COMPANY = {
+  name: "Kommunicate",
+  startedAt: 2020,
+  location: "Bengaluru",
+  designation: "Frontend Developer (Intern)",
+  link: "https://www.kommunicate.io/",
+};
 
 //Add your current working organization at the end
 export const COMPANY_WORKED = Object.freeze({
   helpingDoc: {
     name: "HelpingDoc",
+    designation: "Data executive",
     link: "",
+    startup: false,
   },
   Applozic: {
     name: "Applozic",
+    designation: FIRST_COMPANY.designation,
     link: "",
+    startup: true,
   },
   Intentive: {
-    name: "Kommunicate",
-    link: "https://www.kommunicate.io/",
+    name: FIRST_COMPANY.name,
+    designation: "Software Development Engineer II (SDE-II)",
+    link: FIRST_COMPANY.link,
+    location: FIRST_COMPANY.location,
+    startup: true,
   },
 });
 
@@ -26,14 +42,14 @@ export const GET_IN_TOUCH = {
 };
 export const SKILLS = Object.freeze({
   frontEnd: {
-    programmingLang: ["JavaScript", "TypeScript"],
+    programmingLang: ["JavaScript(ES5 & ES6+)", "TypeScript"],
     markUpLang: ["HTML", "JSX"],
-    stylingLang: ["CSS", "SCSS", "Tailwind", "Styled Components"],
+    stylingLang: ["CSS", "SCSS", "Styled Components"],
     library: ["React", "Redux", "Jekyll", "WordPress"],
   },
   deployment: ["AWS Amplify", "Netlify", "GitHub Pages"],
-  analyticsTools: ["Mixpanel", "Segment", "Google Analytics 4", "GTM"],
-  backend: ["Node", "Express"],
+  analyticsTools: ["Mixpanel", "Segment", "Google Analytics", "UserPilot"],
+  backend: ["Node", "Express", "Mongo"],
 });
 
 export const CONTACT_DETAILS = Object.freeze({
@@ -69,12 +85,12 @@ export const FOOTER_LOGO_MAP = [
 ];
 
 export const NAV_LINKS_MAP = [
+  {
+    name: "About",
+    link: "#about",
+  },
   // {
-  //   name: "About",
-  //   link: "#about",
-  // },
-  // {
-  //   name: "Experience",
+  //   name: "Work Experience",
   //   link: "#experience",
   // },
   {

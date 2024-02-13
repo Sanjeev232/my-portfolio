@@ -28,7 +28,7 @@ const Footer = () => {
         href={CONTACT_DETAILS.myPortFolioGitHub}
         target="_blank"
       >
-        Design & Built by {AUTHOR_NAME}
+        Developed by {AUTHOR_NAME}
       </a>
       <p>
         © {AUTHOR_NAME} {getCurrentDate()}
