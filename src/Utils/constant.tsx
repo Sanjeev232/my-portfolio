@@ -2,7 +2,8 @@ import { GitHubLogo, LinkedInLogo, MobileCall } from "../assets/svg";
 
 export const AUTHOR_NAME = "Sanjeev Singh";
 export const BACKEND_SKILLS = false;
-export const MY_IMAGE = "/my-portfolio/src/assets/sanjeev_01.webp";
+// export const MY_IMAGE = "/my-portfolio/src/assets/sanjeev_01.webp";
+export const MY_IMAGE = "../../assets/sanjeev_01.webp";
 export const FIRST_COMPANY = {
   name: "Kommunicate",
   startedAt: 2020,
