@@ -1,4 +1,4 @@
-import React, { useCallback } from "react";
+import React from "react";
 import { SKILLS, BACKEND_SKILLS } from "../../Utils/constant";
 
 interface SkillCategoryProps {
