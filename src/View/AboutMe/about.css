@@ -147,3 +147,35 @@ img[data-main-image] {
     transition: opacity .25s linear;
     will-change: opacity;
 }
+
+@media (max-width: 1068px) {
+    .inner {
+        gap: 2rem
+    }
+
+    .about-container {
+        padding: 10rem 4rem;
+    }
+}
+
+@media (max-width: 970px) {
+    .about-container__image {
+        max-width: 15rem
+    }
+
+    .inner {
+        gap: 2rem
+    }
+}
+
+@media (max-width: 768px) {
+    .about-container__image {
+        margin: 0 auto;
+        max-width: 20rem;
+    }
+
+    .about-container .inner {
+        flex-direction: column;
+        gap: 5rem;
+    }
+}
