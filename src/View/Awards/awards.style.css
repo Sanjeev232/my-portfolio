@@ -1,0 +1,145 @@
+.award-container__text {
+    flex: 0 0 40%;
+}
+
+.award-container__image {
+    flex: 0 0 60%;
+}
+
+.award-container__image__composition {
+    position: relative;
+}
+
+.composition__photo {
+    width: 55%;
+    box-shadow: 0 1.5rem 4rem var(--navy);
+    border-radius: 2px;
+    position: absolute;
+    z-index: 10;
+    transition: all 0.2s;
+    outline-offset: 0.9rem;
+    border-radius: var(--border-radius);
+    filter: blur(1px);
+}
+
+.composition__photo:hover {
+    /* outline: 0.2rem solid var(--green); */
+    transform: scale(1.05) translateY(-0.5rem);
+    box-shadow: 0 2.5rem 4rem var(--navy);
+    z-index: 20;
+    filter: blur(0px);
+}
+
+.composition__photo--p1 {
+    left: 0;
+    top: 0rem;
+}
+
+.composition__photo--p2 {
+    right: 0;
+    top: 3rem;
+}
+
+.composition__photo--p3 {
+    left: 20%;
+    top: 9rem;
+}
+
+.span-block {
+    position: relative;
+    margin-top: 1rem;
+}
+
+.span-block::before {
+    content: "▹";
+    position: absolute;
+    color: var(--green);
+    font-size: var(--fz-sm);
+    line-height: 1;
+    margin-top: 0.5rem;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+.skill-list {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(140px, 200px));
+    gap: 1rem;
+    padding: 0;
+    margin: var(--gutter-xm) 0 0;
+    overflow: hidden;
+    list-style: none;
+    font-size: var(--fz-md);
+    position: relative;
+
+    >div {
+        position: relative;
+
+        strong {
+            margin-inline-start: 1rem;
+        }
+    }
+
+    div::before {
+        content: "▹";
+        position: absolute;
+        left: 0px;
+        color: var(--green);
+        font-size: var(--fz-sm);
+        line-height: 20px;
+    }
+}
+
+.skills {
+    margin: 0.5rem 0 0 -1.4rem;
+
+    >li {
+        position: relative;
+        margin-bottom: 10px;
+        padding-left: 20px;
+        font-family: var(--font-mono);
+        font-size: var(--fz-sm);
+    }
+
+    >li::before {
+        content: "▹";
+        position: absolute;
+        left: 0px;
+        color: var(--green);
+        font-size: var(--fz-sm);
+        line-height: 12px;
+    }
+}
+
+@media (max-width: 1068px) {
+    .inner {
+        gap: 2rem
+    }
+
+    .award-container {
+        padding: 10rem 4rem;
+    }
+}
+
+@media (max-width: 970px) {
+    .award-container__image {
+        max-width: 15rem
+    }
+
+    .inner {
+        gap: 2rem
+    }
+}
+
+@media (max-width: 768px) {
+    .award-container__image {
+        margin: 0 auto;
+        max-width: 20rem;
+    }
+
+    .award-container .inner {
+        flex-direction: column;
+        gap: 5rem;
+    }
+}
