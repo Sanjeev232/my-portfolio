@@ -8,6 +8,7 @@
 
 .award-container__image__composition {
     position: relative;
+    will-change: transform;
 }
 
 .composition__photo {
@@ -133,6 +134,7 @@
         position: relative;
         width: 33.33333%;
         filter: blur(0px);
+        filter: saturate(2);
         box-shadow: 0 1.5rem 2.5rem var(--navy);
     }
 
