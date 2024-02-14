@@ -95,6 +95,10 @@ export const NAV_LINKS_MAP = [
   //   link: "#experience",
   // },
   {
+    name: "Awards",
+    link: "#awards",
+  },
+  {
     name: "Contact",
     link: "#contact",
   },

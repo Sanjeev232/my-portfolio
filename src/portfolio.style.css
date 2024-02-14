@@ -27,7 +27,7 @@ svg.feather {
 }
 
 .sub-container {
-    padding: 10rem 15rem;
+    padding: 10rem 12rem;
 }
 
 .home-container {
@@ -167,7 +167,7 @@ p>.p-anchor:focus-visible {
     -webkit-box-align: center;
     align-items: center;
     position: relative;
-    margin: 10px 0px 40px;
+    margin: 0.7rem 0 4rem;
     width: 100%;
     font-size: clamp(26px, 5vw, var(--fz-heading));
     white-space: nowrap;
@@ -185,6 +185,14 @@ p>.p-anchor:focus-visible {
 .paragraph {
     color: var(--slate);
     font-size: var(--fz-lg);
+}
+
+.paragraph>.paragraph-span {
+    position: relative;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    font-family: var(--font-mono);
+    font-size: var(--fz-sm);
 }
 
 .footer-container {
