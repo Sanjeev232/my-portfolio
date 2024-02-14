@@ -113,33 +113,42 @@
 }
 
 @media (max-width: 1068px) {
-    .inner {
-        gap: 2rem
-    }
-
     .award-container {
         padding: 10rem 4rem;
     }
 }
 
-@media (max-width: 970px) {
-    .award-container__image {
-        max-width: 15rem
-    }
-
-    .inner {
-        gap: 2rem
-    }
-}
-
 @media (max-width: 768px) {
     .award-container__image {
-        margin: 0 auto;
-        max-width: 20rem;
+        width: 100%;
     }
 
     .award-container .inner {
-        flex-direction: column;
+        flex-direction: column-reverse;
         gap: 5rem;
     }
+
+    .composition__photo {
+        float: left;
+        position: relative;
+        width: 33.33333%;
+        filter: blur(0px);
+        box-shadow: 0 1.5rem 2.5rem var(--navy);
+    }
+
+    .composition__photo--p2 {
+        top: 0;
+    }
+
+    .composition__photo--p1 {
+        top: -1rem;
+        transform: scale(1.4);
+        z-index: 100;
+    }
+
+    .composition__photo--p3 {
+        top: 0;
+        left: 0;
+    }
+
 }
