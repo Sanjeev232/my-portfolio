@@ -6,8 +6,8 @@ import MoveToTop from "./View/MoveToTop";
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <>
-      <MoveToTop />
       <App />
+      <MoveToTop />
     </>
   </React.StrictMode>
 );
