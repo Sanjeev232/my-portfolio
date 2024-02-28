@@ -7,6 +7,7 @@
     --segment-dash-length: 0;
     --duration: 2.25s;
     --timing-function: ease-out;
+    --bar-border-radius: 15px
 }
 
 .loading-Container {
@@ -49,6 +50,38 @@
     stroke-dashoffset: 20.32;
     animation: outline-rotate var(--duration) var(--timing-function) infinite;
 }
+
+.progressbar-container {
+    width: 50vw;
+    height: 25px;
+    border: solid var(--green);
+    border-radius: var(--bar-border-radius);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    >span {
+        z-index: 999;
+        position: relative;
+        font-weight: 400;
+    }
+
+    >div {
+        height: 100%;
+        border-radius: var(--bar-border-radius);
+        position: absolute;
+        background-color: var(--green);
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
 
 @keyframes inside-rotate {
     0% {

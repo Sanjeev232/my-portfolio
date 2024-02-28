@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import NavBar from "./View/Navbar/NavBar";
 import Home from "./View/Home";
 import About from "./View/AboutMe/About";
@@ -12,21 +12,11 @@ import ScrollToSectionOnLoadWrapper from "./View/ScrollTOSectionWrapper/ScrollTo
 function App() {
   const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
-    const loadingTimeOut = setTimeout(() => {
-      setLoading(false);
-    }, 2000);
-
-    return () => {
-      clearTimeout(loadingTimeOut);
-    };
-  }, []);
-
   return (
     <div className="main-container">
       {loading ? (
         <>
-          <Loading />
+          <Loading setLoading={setLoading} />
         </>
       ) : (
         <ScrollToSectionOnLoadWrapper>
