@@ -15,7 +15,7 @@ export const FIRST_COMPANY = {
 export const CURRENT_COMPANY = {
 	name: "Accenture",
 	startedAt: 2024,
-	location: "Noida",
+	location: "Delhi NCR",
 	designation: "Package App Development Senior Analyst",
 	link: "https://www.accenture.com/in-en",
 };
@@ -65,7 +65,7 @@ export const SKILLS = Object.freeze({
 	},
 	deployment: ["AWS Amplify", "Netlify", "GitHub Pages"],
 	analyticsTools: ["Mixpanel", "Segment", "Google Analytics", "UserPilot"],
-	backend: ["Node", "Express", "Mongo"],
+	backend: ["Node.js", "Express,js", "MongoDB"],
 });
 
 export const CONTACT_DETAILS = Object.freeze({

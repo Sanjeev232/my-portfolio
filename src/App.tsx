@@ -24,7 +24,7 @@ function App() {
 					<Home />
 					<About />
 					<Awards />
-					<Experience />
+					{/* <Experience /> */}
 					<Contact />
 					<Footer />
 				</ScrollToSectionOnLoadWrapper>

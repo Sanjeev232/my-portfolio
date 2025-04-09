@@ -38,7 +38,7 @@ const About = () => {
 					</p>
 					<p className="paragraph gutter-paragraph">
 						Fast-forward to today, and I've had the privilege of working as a
-						{` ${designation}`} at a Noida {""}
+						{` ${designation}`} at {""}
 						<a
 							className="p-anchor"
 							href={link}
@@ -48,7 +48,7 @@ const About = () => {
 						>
 							{name}
 						</a>
-						, My main focus these days is building accessible, inclusive
+						{""} {location} location, My main focus these days is building accessible, inclusive
 						products and digital experiences at {name}, particularly related to
 						reusable react components, development and optimization of node.js
 						based backend.
