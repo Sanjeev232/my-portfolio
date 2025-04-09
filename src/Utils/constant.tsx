@@ -76,7 +76,7 @@ export const CONTACT_DETAILS = Object.freeze({
 	gitHubOffice: "https://github.com/Sanjeevsinghnegi",
 	myPortFolioGitHub: "https://github.com/Sanjeev232/my-portfolio",
 	resume:
-		"https://drive.google.com/file/d/1HumqnECvc4MPz2xMBGn7YmoU7eCQuZO_/view?usp=sharing",
+		"https://drive.google.com/file/d/1EjkocFtPsMFRx2IaNlKmZKaIOCBRrYCY/view?usp=sharing",
 });
 
 export const FOOTER_LOGO_MAP = [
