@@ -65,7 +65,7 @@ export const SKILLS = Object.freeze({
 	},
 	deployment: ["AWS Amplify", "Netlify", "GitHub Pages"],
 	analyticsTools: ["Mixpanel", "Segment", "Google Analytics", "UserPilot"],
-	backend: ["Node.js", "Express,js", "MongoDB"],
+	backend: ["Node.js", "Express.js", "MongoDB",],
 });
 
 export const CONTACT_DETAILS = Object.freeze({

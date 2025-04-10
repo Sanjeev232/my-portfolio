@@ -31,27 +31,12 @@ const About = () => {
 			<div className="inner">
 				<div className="about-container__text">
 					<p className="paragraph gutter-paragraph">
-						Hello! My name is {AUTHOR_NAME}, and I enjoy creating things that
-						live on the internet. My interest in web development started back in
-						{` ${firstCompanyStartedAt}`} when I decided to begin my career as a
-						{` ${firstCompanyDes}`} at {firstCompanyName}.
+						Hello! I'm {AUTHOR_NAME} — a passionate software developer who loves building things for the web. My journey in web development began in {` ${firstCompanyStartedAt}`}, when I kicked off my career as a {` ${firstCompanyDes}`} at {firstCompanyName}.
 					</p>
 					<p className="paragraph gutter-paragraph">
-						Fast-forward to today, and I've had the privilege of working as a
-						{` ${designation}`} at {""}
-						<a
-							className="p-anchor"
-							href={link}
-							rel="noreferrer"
-							target="_blank"
-							tabIndex={-1}
-						>
-							{name}
-						</a>
-						{""} {location} location, My main focus these days is building accessible, inclusive
-						products and digital experiences at {name}, particularly related to
-						reusable react components, development and optimization of node.js
-						based backend.
+						Today, I work as a {designation} at {name} ({location}), where I focus on crafting accessible, inclusive digital experiences. My current work revolves around building reusable React components and diving deep into Node.js-based backend development and optimization.
+
+						I'm currently expanding my skills into Redis, Nginx, and SQL to better understand scalable architectures — with the goal of becoming a well-rounded fullstack developer capable of building and deploying robust production-grade systems.
 					</p>
 					<Skills />
 				</div>
