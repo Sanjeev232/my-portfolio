@@ -20,19 +20,7 @@ const Home = () => {
 			<h1 className="big-heading h1">{AUTHOR_NAME}.</h1>
 			<h3 className="big-heading h3">I build things for the web.</h3>
 			<p className="paragraph-description">
-				I’m a software engineer specializing in building exceptional digital
-				experiences. Currently, I’m focused on creating accessible,
-				human-centered products, at{" "}
-				<a
-					className="p-anchor"
-					href={link}
-					rel="noreferrer"
-					target="_blank"
-					tabIndex={-1}
-				>
-					{name}
-				</a>{" "}
-				in Delhi NCR.
+				I’m a software engineer specializing in building exceptional digital experiences. Currently based at {" "} <a className="p-anchor" href={link} rel="noreferrer" target="_blank" tabIndex={-1}>{name}</a>{" "} in Delhi NCR, I focus on creating accessible, human-centered products. I'm also expanding into backend development with Node.js, Express, and MongoDB to grow as a fullstack developer and build scalable, end-to-end applications.
 			</p>
 			<a
 				className="email-link email-link-header"
