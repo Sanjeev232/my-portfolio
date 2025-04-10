@@ -81,7 +81,7 @@ export const CONTACT_DETAILS = Object.freeze({
 
 export const FOOTER_LOGO_MAP = [
 	{
-		href: CONTACT_DETAILS.gitHubOffice,
+		href: CONTACT_DETAILS.gitHubPersonal,
 		logo: <GitHubLogo />,
 		rel: "noreferrer",
 		target: "_blank",
