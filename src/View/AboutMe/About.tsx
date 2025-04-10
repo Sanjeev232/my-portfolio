@@ -18,7 +18,7 @@ interface Company {
 
 const About = () => {
 	const currentWorkingCompany = getLastWorkedCompany(COMPANY_WORKED) as Company;
-	const { name, designation, location, link } = currentWorkingCompany;
+	const { name, designation, location } = currentWorkingCompany;
 	const {
 		name: firstCompanyName,
 		startedAt: firstCompanyStartedAt,
