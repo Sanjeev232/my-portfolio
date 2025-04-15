@@ -2,8 +2,9 @@ import { GitHubLogo, LinkedInLogo, MobileCall } from "../assets/svg";
 
 export const AUTHOR_NAME = "Sanjeev Singh";
 export const BACKEND_SKILLS = true;
-export const MY_IMAGE =
-	"https://cdn.kommunicate.io/kommunicate/website/about-us/sanjeev_01.webp";
+// export const MY_IMAGE =
+// 	"https://cdn.kommunicate.io/kommunicate/website/about-us/sanjeev_01.webp";
+
 export const FIRST_COMPANY = {
 	name: "Kommunicate",
 	startedAt: 2020,

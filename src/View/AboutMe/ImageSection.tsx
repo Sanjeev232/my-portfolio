@@ -1,4 +1,5 @@
-import { MY_IMAGE } from "../../Utils/constant";
+// import { MY_IMAGE } from "../../Utils/constant";
+import MY_IMAGE from "../../assets/sanjeev.png";
 
 const ImageSection: React.FC = () => {
   return (
