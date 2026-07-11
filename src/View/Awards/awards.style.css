@@ -42,10 +42,17 @@
 }
 
 .composition__photo--p3 {
-    left: 20%;
+    left: 0;
     top: 9rem;
 }
-
+.composition__photo--p4 {
+    right: 0;
+    top: 9rem;
+}
+.composition__photo--p5 {
+    right: 25%;
+    top: 6rem;
+}
 .span-block {
     position: relative;
     margin-top: 1rem;

@@ -1,5 +1,5 @@
 // import { MY_IMAGE } from "../../Utils/constant";
-import MY_IMAGE from "../../assets/sanjeev.png";
+import MY_IMAGE_2 from "../../assets/MY_IMAGE_2.jpeg";
 
 const ImageSection: React.FC = () => {
   return (
@@ -55,7 +55,7 @@ const Image: React.FC = () => {
       sizes="(min-width: 500px) 500px, 100vw"
       decoding="async"
       loading="lazy"
-      src={MY_IMAGE}
+      src={MY_IMAGE_2}
       alt="Sanjeev's Image"
       style={{ objectFit: "cover", opacity: 1 }}
       className="main__image"

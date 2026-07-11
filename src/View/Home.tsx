@@ -1,7 +1,7 @@
 import {
 	COMPANY_WORKED,
 	AUTHOR_NAME,
-	CONTACT_DETAILS,
+	FOOTER_LOGO_MAP,
 } from "../Utils/constant";
 import { getLastWorkedCompany } from "../Utils/helpers";
 
@@ -24,11 +24,11 @@ const Home = () => {
 			</p>
 			<a
 				className="email-link email-link-header"
-				href={CONTACT_DETAILS.gitHubOffice}
+				href={FOOTER_LOGO_MAP[1].href}
 				target="_blank"
 				rel="noreferrer"
 			>
-				Explore my contributions to Kommunicate!
+				Connect over Linkedin!
 			</a>
 		</section>
 	);

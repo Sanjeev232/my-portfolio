@@ -6,6 +6,7 @@ import Awards from "./View/Awards/Awards";
 import Footer from "./View/Footer";
 import Contact from "./View/Contact";
 import Loading from "./View/Loading/Loading";
+// import Experience from "./View/Experience";
 import ScrollToSectionOnLoadWrapper from "./View/ScrollTOSectionWrapper/ScrollToSectionOnLoadWrapper";
 
 function App() {
@@ -22,8 +23,8 @@ function App() {
 					<NavBar />
 					<Home />
 					<About />
-					<Awards />
 					{/* <Experience /> */}
+					<Awards />
 					<Contact />
 					<Footer />
 				</ScrollToSectionOnLoadWrapper>
